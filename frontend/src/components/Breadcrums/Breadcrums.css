@@ -1,0 +1,50 @@
+.breadcrum {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #5e5e5e;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 60px 170px;
+    text-transform: capitalize;
+  }
+  
+/* Large screens (desktops) */
+@media only screen and (max-width: 1200px) {
+  .breadcrum {
+  
+    gap: 6px;
+    color: #5e5e5e;
+    font-size: 24px;
+    font-weight: 550;
+    margin: 55px 150px;
+    text-transform: capitalize;
+  }
+}
+
+/* Medium screens (laptops) */
+@media only screen and (max-width: 992px){
+  .breadcrum {
+  
+    gap: 5px;
+    color: #5e5e5e;
+    font-size: 23px;
+    font-weight: 500;
+    margin: 50px 130px;
+    text-transform: capitalize;
+  }
+}
+
+
+/* Extra small screens (mobiles) */
+@media only screen and (max-width: 767px) {
+  .breadcrum {
+  
+    gap: 5px;
+    color: #5e5e5e;
+    font-size: 20px;
+    font-weight: 450;
+    margin: 45px 120px;
+    text-transform: capitalize;
+  }
+}

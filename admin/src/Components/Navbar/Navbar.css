@@ -1,0 +1,52 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    box-shadow: 0 1px 3px 2px #000;
+    background: #e26398;
+    margin-bottom: 1px;
+}
+
+
+.nav-logo {
+    height: 100px;
+    width: 400px;
+    padding-left: 200px;
+}
+.one-line{
+    display: flex;
+    color: white;
+    text-decoration: underline;
+    justify-content: space-between;
+}
+.one-line h2{
+    padding-right: 20px;
+    cursor: pointer;
+}
+.one-line h2:hover{
+   color: black;
+}
+.nav-profile {
+    width: 80px;
+    padding-right: 200px;
+    cursor: pointer;
+
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+    .nav-logo {
+        width: 150px;
+    }
+    .nav-profile {
+        width: 60px;
+    }
+   
+}
+
+

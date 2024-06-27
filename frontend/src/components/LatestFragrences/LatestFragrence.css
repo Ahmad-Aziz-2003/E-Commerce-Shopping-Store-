@@ -1,0 +1,108 @@
+.latestF {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 90vh;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background: linear-gradient(180deg, #69e2aa, #e1ffea22 60%);
+}
+
+.latestF h1 {
+  padding-top: 100px;
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.latestF hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+}
+
+.latestF-item {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   margin-top: 50px;
+   gap: 30px;
+}
+
+/* For large screens (desktops) */
+@media (max-width: 1200px) {
+  .latestF {
+      height: 90vh;
+  }
+
+  .latestF h1 {
+      font-size: 55px;
+  }
+
+  .latestF hr {
+      width: 160px;
+  }
+
+  .latestF-item {
+      gap: 25px;
+  }
+}
+
+/* For medium screens (laptops) */
+@media(max-width: 1199px) {
+  .latestF {
+      height: 60vh;
+  }
+
+  .latestF h1 {
+      font-size: 40px;
+  }
+
+  .latestF hr {
+      width: 180px;
+  }
+
+  .latestF-item {
+      gap: 22px;
+  }
+}
+
+/* For small screens (tablets) */
+@media (max-width: 767px) {
+  .latestF {
+      height: 50vh;
+  }
+
+  .latestF h1 {
+      font-size: 30px;
+  }
+
+  .latestF hr {
+      width: 130px;
+  }
+
+  .latestF-item {
+      gap: 16px;
+  }
+}
+
+/* For extra small screens (mobiles) */
+@media (max-width: 479px) {
+  .latestF {
+    height: 40vh;
+  }
+
+  .latestF h1 {
+    font-size: 24px;
+  }
+
+  .latestF hr {
+      flex-wrap: wrap;
+  }
+
+  .latestF-item {
+      flex-direction: column;
+      gap: 10px;
+  }
+}

@@ -1,0 +1,227 @@
+/* General Styles */
+.nav-logo img {
+    width: 200px;
+  }
+  
+  .Navbar {
+    display: flex;
+    align-items: center;
+    background-color: #f5883b;
+    padding: 0 25px;
+    transition: 0.3s;
+    justify-content: space-between; /* Use space-between for better spacing on larger screens */
+    animation: cfr 60s infinite;
+  }
+  
+  hr {
+    border-bottom: 1px solid black;
+  }
+  
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    transition: 0.5s;
+    color: white;
+  }
+  
+  .nav-menu li {
+    list-style-type: none;
+    padding-left: 100px;
+    color: white;
+  }
+  
+  .styl {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .atag {
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 1;
+  }
+  
+  .atag:hover {
+    color: black;
+  }
+  
+  .nav-login-cart {
+    display: flex;
+    padding-left: 200px;
+  }
+  
+  .nav-login-cart img {
+    margin-left: 40px;
+  }
+  
+  .cart_count {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+    margin-left: -20px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: white;
+  }
+  
+  .btn {
+    margin-right: 100px;
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+    border: 2px solid white;
+    border-radius: 1.5em;
+    color: white;
+    background-color: #e26398;
+    animation: cfr 60s infinite;
+  }
+  
+  .btn:hover {
+    border: 2px solid black;
+    border-radius: 3.5em;
+    background: black;
+    color: whitesmoke;
+    font-weight: bolder;
+  }
+  
+  .btn:active {
+    border: 3px solid black;
+  }
+  
+  .nav-dropdown {
+    display: none;
+    cursor: pointer; /* Added cursor pointer for better UX */
+  }
+  
+  @media (max-width: 1200px) {
+    .nav-menu li {
+      padding-left: 30px; /* Adjust padding for medium screens */
+    }
+    .nav-login-cart {
+      padding-left: 70px; /* Adjust padding for medium screens */
+    }
+    .btn {
+      margin-right: 30px; /* Adjust margin for medium screens */
+    }
+  }
+  @media (max-width: 923px) {
+    .Navbar {
+        padding: 10px 0;
+        justify-content: space-between; /* Ensure items are spaced out */
+      }
+    .nav-menu li {
+      padding-left: 20px; /* Adjust padding for medium screens */
+      font-size: 13px;
+    }
+  
+    .nav-login-cart {
+      padding-left: 20px; /* Adjust padding for medium screens */
+    }
+    .btn {
+      margin-right: 5px; /* Adjust margin for medium screens */
+    }
+  }
+  @media (max-width: 700px) {
+    .Navbar {
+      padding: 8px 0;
+      justify-content: space-between; /* Ensure items are spaced out */
+    }
+    
+    .nav-logo img {
+      width: 120px; /* Adjust logo size */
+    }
+    
+    .nav-dropdown {
+      display: block;
+      width: 30px;
+      transition: 0.5s;
+    }
+    
+    .nav-menu {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      display: none;
+      width: 100%;
+      position: absolute;
+      background-color: rgb(131, 112, 112);
+      justify-content: center;
+      top: 60px;
+      color: black;
+      flex-direction: column; /* Stack menu items vertically */
+      align-items: center; /* Center align menu items */
+      text-decoration: underline;
+    }
+    
+    .nav-menu li {
+      padding-left: 0;
+      padding: 7px 0; /* Adjust padding for menu items */
+    }
+    
+    .nav-menu-visible {
+      display: flex;
+    }
+    
+    .nav-dropdown .open {
+      transform: rotate(90deg);
+    }
+    
+    .nav-login-cart {
+      padding-left: 0;
+      margin-top: 16px; /* Add margin for better spacing */
+    }
+    
+    .nav-login-cart img {
+      margin-left: 18px; /* Adjust margin */
+    }
+    
+    .btn {
+      margin: 0 auto; /* Center button */
+      margin-top: 18px; /* Add margin for spacing */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-logo img {
+      width: 100px; /* Further adjust logo size */
+    }
+    
+    .nav-menu li {
+      font-size: 13px; /* Adjust font size for small screens */
+    }
+    
+    .btn {
+      font-size: 13px; /* Adjust button font size */
+      padding: 0.3em 1em; /* Adjust button padding */
+    }
+  }
+  
+
+@keyframes cfr {
+    0% {
+         background-color: #e26398;
+     }
+     25% {
+         background-color: #11696E;
+     }
+     50% {
+         background-color: #455576;
+   
+     }
+     75%{
+         background-color: #b53951;;
+     }
+     100%{
+         background-color:#cd7333;
+     }
+   } 

@@ -1,0 +1,185 @@
+/* hero.css */
+.hero {
+    height: 92vh;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    display: flex;
+    background-image: url("../Assets/back1.avif");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 850px;
+    animation: changeImage 60s infinite;
+    
+  }  
+  .container {
+   width: 1500px;
+   max-width: 100%;
+   margin: 0 auto;
+   padding-left: 30px;
+  }
+  .frontBox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+    
+  .frontText {
+    flex: 0 0 50%;
+    margin: auto 0;
+  }
+    
+  .frontText h1 {
+    color: #e26398;
+    font-size: 3.4rem;
+    font-weight: bolder;
+    animation: colortext 60s infinite;
+    
+  } 
+  .frontText p {
+    font-size: 1.5rem;
+    margin-bottom: 2.8rem;
+    color: #e26398;
+    font-weight: 500;
+    animation: colortext 60s infinite;
+  }
+  
+  .inputBox {
+    display: flex;
+  }
+  
+  .inputBox input {
+    width: 88%;
+    height: 4.2rem;
+    font-size: 1.6rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color:#df88ac;
+    border: none;
+    animation: searchtag 60s infinite;
+  }
+  
+  .inputBox .search {
+    width: 12%;
+    background-color:#e26398;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: search 60s infinite;
+  }
+  
+  .search i {
+    color: #fff;
+  }
+  input::placeholder {
+    color: #f5f5f5; /* Change placeholder text color to gray */
+  }
+    
+  
+  @keyframes changeImage {
+    0% {
+        background-image: url("../Assets/back1.avif");
+    }
+    25% {
+        background-image: url("../Assets/back3.jpg");
+    }
+    50% {
+        background-image: url('../Assets/bgecom.png');
+  
+    }
+    75%{
+        background-image: url('../Assets/back5.jpg');
+    }
+    100%{
+        background-image: url('../Assets/b17.jpg');
+    }
+  }
+
+  @keyframes search{
+    0% {
+        background-color: #e26398;
+    }
+    25% {
+        background-color: #11696E;
+    }
+    50% {
+        background-color: #455576;
+  
+    }
+    75%{
+        background-color: #b53951;;
+    }
+    100%{
+        background-color:#cd7333;
+    }
+  }
+@keyframes searchtag{
+    0% {
+        background-color: df88ac;
+    }
+    25% {
+        background-color: #11696e56;
+    }
+    50% {
+        background-color: #4555765d;
+  
+    }
+    75%{
+        background-color: #b53952bd;;
+    }
+    100%{
+        background-color:#cd733398;
+    }
+  }
+    @keyframes colortext{
+    0% {
+        color: #e26398;
+    }
+    25% {
+        color: #1b4649;
+    }
+    50% {
+        color:#455576 ;
+  
+    }
+    75%{
+      color:#b53951; ;
+    }
+    100%{
+        
+    color:#cd7333 ;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .frontText h1 {
+        font-size: 2.2rem;
+    }
+
+    .frontText p {
+        font-size: 1.2rem;
+    }
+
+    .inputBox input {
+        height: 2.6rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+    @media (max-width: 600px) {
+      .frontText h1 {
+          font-size: 1.8rem;
+      }
+  
+      .frontText p {
+          font-size: 1rem;
+      }
+  
+      .inputBox input {
+          height: 2.4rem;
+          font-size: 1rem;
+      }
+  }
